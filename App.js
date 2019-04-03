@@ -22,16 +22,16 @@ export default class App extends Component<Props> {
   
   constructor(props) {
     super(props)
-    this.state = {
-      a:""
-    }
+    this.state = {}
   }
   async componentDidMount() {
     const langs = await getLanguages();
     const lang = langs[0];
     const a = Date.now();
     const mnemonic = await generate('zhs', entropy.BIP39_ENTROPY_LEN_128);
-    console.log(Date.now() - a);
+    const time = Number(Date.now() - a);
+    console.log(time);
+    mnemonic.time = time;
     console.log(mnemonic);
     this.setState({...mnemonic })
   }
@@ -44,6 +44,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{instructions}</Text>
         <Text style={styles.instructions}>{this.state.mnemonic}</Text>
         <Text style={styles.instructions}>{this.state.seedhex}</Text>
+        <Text style={styles.instructions}>{this.state.time}</Text>
       </View>
     );
   }
