@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import { getLanguages, generate, entropy } from 'react-native-rn-bip39';
+import { getLanguages, generate, entropy, lang } from 'react-native-rn-bip39';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -28,7 +28,7 @@ export default class App extends Component<Props> {
     const langs = await getLanguages();
     const lang = langs[0];
     const a = Date.now();
-    const mnemonic = await generate('zhs', entropy.BIP39_ENTROPY_LEN_128);
+    const mnemonic = await generate(lang.zhs, entropy.BIP39_ENTROPY_LEN_128);
     const time = Number(Date.now() - a);
     console.log(time);
     mnemonic.time = time;
