@@ -26,7 +26,7 @@ export default class App extends Component<Props> {
   }
   async componentDidMount() {
     const langs = await getLanguages();
-    const lang = langs[0];
+    console.log(langs);
     const a = Date.now();
     const mnemonic = await generate(lang.zhs, entropy.BIP39_ENTROPY_LEN_128);
     const time = Number(Date.now() - a);
