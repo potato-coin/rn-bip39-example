@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import { getLanguages, generate, entropy, lang } from 'react-native-rn-bip39';
+import { getLanguages, generate, entropy, lang, validateMnemonic, mnemonicToBip39SeedHex } from 'react-native-rn-bip39';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -33,6 +33,8 @@ export default class App extends Component<Props> {
     console.log(time);
     mnemonic.time = time;
     console.log(mnemonic);
+    mnemonic.validate = await validateMnemonic(mnemonic.mnemonic, lang.zhs);
+    mnemonic.validateSeedHex = await mnemonicToBip39SeedHex(mnemonic.mnemonic);
     this.setState({...mnemonic })
   }
   render() {
@@ -45,6 +47,8 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{this.state.mnemonic}</Text>
         <Text style={styles.instructions}>{this.state.seedhex}</Text>
         <Text style={styles.instructions}>{this.state.time}</Text>
+        <Text style={styles.instructions}>{'validate ' + this.state.validate}</Text>
+        <Text style={styles.instructions}>{this.state.validateSeedHex}</Text>
       </View>
     );
   }
