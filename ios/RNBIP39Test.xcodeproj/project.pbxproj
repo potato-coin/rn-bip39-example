@@ -36,7 +36,7 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* RNBIP39TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNBIP39TestTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		4C4F18663DCD4C2680F1949F /* libRNRnBip39.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78B895D11344B58BED6A558 /* libRNRnBip39.a */; };
+		4C4F18663DCD4C2680F1949F /* libPotatoCrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78B895D11344B58BED6A558 /* libPotatoCrypto.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -284,10 +284,10 @@
 		};
 		5A1DF3542254A60500E981D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 618B5C8DEE334650B04D4942 /* RNRnBip39.xcodeproj */;
+			containerPortal = 618B5C8DEE334650B04D4942 /* PotatoCrypto.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNRnBip39;
+			remoteInfo = PotatoCrypto;
 		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -350,10 +350,10 @@
 		2D02E4901E0B4A5D006451C7 /* RNBIP39Test-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNBIP39Test-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		618B5C8DEE334650B04D4942 /* RNRnBip39.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNRnBip39.xcodeproj; path = "../node_modules/react-native-rn-bip39/ios/RNRnBip39.xcodeproj"; sourceTree = "<group>"; };
+		618B5C8DEE334650B04D4942 /* PotatoCrypto.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = PotatoCrypto.xcodeproj; path = "../node_modules/react-native-rn-bip39/ios/PotatoCrypto.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		A78B895D11344B58BED6A558 /* libRNRnBip39.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNRnBip39.a; sourceTree = "<group>"; };
+		A78B895D11344B58BED6A558 /* libPotatoCrypto.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libPotatoCrypto.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -385,7 +385,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				4C4F18663DCD4C2680F1949F /* libRNRnBip39.a in Frameworks */,
+				4C4F18663DCD4C2680F1949F /* libPotatoCrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +545,7 @@
 		5A1DF32B2254A60400E981D3 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				A78B895D11344B58BED6A558 /* libRNRnBip39.a */,
+				A78B895D11344B58BED6A558 /* libPotatoCrypto.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -553,7 +553,7 @@
 		5A1DF3512254A60500E981D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A1DF3552254A60500E981D3 /* libRNRnBip39.a */,
+				5A1DF3552254A60500E981D3 /* libPotatoCrypto.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -591,7 +591,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				618B5C8DEE334650B04D4942 /* RNRnBip39.xcodeproj */,
+				618B5C8DEE334650B04D4942 /* PotatoCrypto.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -802,7 +802,7 @@
 				},
 				{
 					ProductGroup = 5A1DF3512254A60500E981D3 /* Products */;
-					ProjectRef = 618B5C8DEE334650B04D4942 /* RNRnBip39.xcodeproj */;
+					ProjectRef = 618B5C8DEE334650B04D4942 /* PotatoCrypto.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1040,10 +1040,10 @@
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5A1DF3552254A60500E981D3 /* libRNRnBip39.a */ = {
+		5A1DF3552254A60500E981D3 /* libPotatoCrypto.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libRNRnBip39.a;
+			path = libPotatoCrypto.a;
 			remoteRef = 5A1DF3542254A60500E981D3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
