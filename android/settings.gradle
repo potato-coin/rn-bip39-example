@@ -1,5 +1,5 @@
 rootProject.name = 'RNBIP39Test'
-include ':react-native-rn-bip39'
-project(':react-native-rn-bip39').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-rn-bip39/android')
+include ':react-native-potato-crypto'
+project(':react-native-potato-crypto').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-potato-crypto/android')
 
 include ':app'
