@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.rnbip39test"
+        applicationId "com.example"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -178,6 +178,7 @@ android {
                 output.versionCodeOverride =
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
+
         }
     }
 }
