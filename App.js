@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import { getLanguages, generate, entropy, lang, validateMnemonic, mnemonicToBip39SeedHex } from 'react-native-rn-bip39';
+import { getLanguages, generate, entropy, lang, validateMnemonic, mnemonicToBip39SeedHex } from 'react-native-potato-crypto';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -28,17 +28,16 @@ export default class App extends Component<Props> {
     const langs = await getLanguages();
     console.log(langs);
     const a = Date.now();
-    const mnemonic = await generate(lang.zhs, entropy.BIP39_ENTROPY_LEN_128);
+    const state = await generate(lang.zhs, entropy.BIP39_ENTROPY_LEN_128);
     const time = Number(Date.now() - a);
     console.log(time);
-    mnemonic.time = time;
-    console.log(mnemonic);
-    mnemonic.validate = await validateMnemonic(mnemonic.mnemonic, lang.zhs);
-    mnemonic.validateSeedHex = await mnemonicToBip39SeedHex(mnemonic.mnemonic);
-    this.setState({...mnemonic })
+    state.time = time;
+    console.log(state);
+    state.validate = await validateMnemonic(state.mnemonic, lang.zhs);
+    state.validateSeedHex = await mnemonicToBip39SeedHex(state.mnemonic);
+    this.setState({...state })
   }
   render() {
-    const { mnemonic } = this.props;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
