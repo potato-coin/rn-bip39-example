@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "hermes-engine": "^0.2.1",
+    "hermes-engine": "^0.11.0",
     "react": "16.9.0",
     "react-native": "0.62.3",
     "react-native-potato-crypto": "git+https://github.com/potato-coin/react-native-potato-crypto.git#develop"
